@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #222;
+}
+h1,h3{
+    color: #fff;
+}
+/* btn */
+
+.btn1 span{
+    position: relative;
+    z-index: 1;
+}
+.btn1{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #2196F3;
+    transition: 0.5s;
+}
+
+.btn1:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+/* btn2 */
+
+.btn2{
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 10px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.btn2 span{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+/* btn3 */
+.btn3{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2894ff;
+    background: #262c37;
+    font-size: 16px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+.Linespan{
+    position: absolute;
+    display: block;
+    background: #2894ff;
+}
+.btn3 span:nth-child(1){
+    Left: 0;
+    bottom: 0;
+    width: 1px;
+    height:100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.25s;
+}
+.btn3:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+}
+.btn3 span:nth-child(2){
+    Left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.25s;
+}
+.btn3:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s;
+    transition-delay: 0.25s;
+}
+.btn3 span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height:100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+    transition-delay: 0.5s;
+}
+.btn3:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.25s;
+    transition-delay: 0.5s;
+}
+.btn3 span:nth-child(4){
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s;
+    transition-delay: 0.75s;
+}
+.btn3:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.75s;
+}
+.btn3:hover{
+    background: #2894ff;
+    color: #1f242d;
+    transition:0.5s;
+    transition-delay: 1s;
+}
+
+/* Card1 */
+.Card1Container{
+    position: relative;
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Card1Container .Card1 {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(129, 129, 230, 1);
+    transition: 0.5s;
+}
+.Card1Container:hover .Card1 {
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.Card1Container .Card1:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+.Card1Container .Card1 .Card1Circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+.Card1Container .Card1 .Card1Circle h2{
+    color:#fff;
+    font-size: 4.5em;
+    padding: 30px 0;
+}
+.Card1Container .Card1 .Card1Content{
+    position: absolute;
+    bottom: 10px;
+    page-break-after: 20px;
+    text-align: center;
+}
+.Card1Container .Card1 .Card1Content p {
+    color: #666;
+}
+.Card1Container .Card1 .Card1Content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.Card1Container .Card1:nth-child(1) .Card1Circle,
+.Card1Container .Card1:nth-child(1) .Card1Content a{
+    background: #f39f21;
+}
+.Card1Container .Card1:nth-child(2) .Card1Circle,
+.Card1Container .Card1:nth-child(2) .Card1Content a{
+    background: #2894ff;
+}
+.Card1Container .Card1:nth-child(3) .Card1Circle,
+.Card1Container .Card1:nth-child(3) .Card1Content a{
+    background: #C568FA;
+}
+
+/* form  */
+.loginform{
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 15px 25px rgb(106, 106, 233);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+}
+.inputType1{
+    border-bottom-width: 1px;
+    border-bottom: black;
+    border: 0;
+
+}
+
+
+.whiteColor{
+    color: #fff;
+}
+.redColor{
+    color: #FF4D4D;
+}
+.orangeColor{
+    color: #f39f21;
+}
+.yellowColor{
+    color: #D9E669;
+}
+.greenColor{
+    color: #89F290;
+}
+.blueColor{
+    color: #2894ff;
+}
+.purpleColor{
+    color: #C568FA;
+}
+
+.redbtnColorSpan{
+    background: #FF4D4D;
+}
+.orangebtnColorSpan{
+    background: #f39f21;
+}
+.yellowbtnColorSpan{
+    background: #D9E669;
+}
+.greenbtnColorSpan{
+    background: #89F290;
+}
+.bluebtnColorSpan{
+    background: #2894ff;
+}
+.purplebtnColorSpan{
+    background: #C568FA;
+}
+
+.redbtnColor::before{
+    background: #FF4D4D;
+}
+.orangebtnColor::before{
+    background: #f39f21;
+}
+.yellowbtnColor::before{
+    background: #D9E669;
+}
+.greenbtnColor::before{
+    background: #89F290;
+}
+.bluebtnColor::before{
+    background: #2894ff;
+}
+.purplebtnColor::before{
+    background: #C568FA;
+}
+
+.redbtnColor:hover{
+    background: #FF4D4D;
+}
+.orangebtnColor:hover{
+    background: #f39f21;
+}
+.yellowbtnColor:hover{
+    background: #D9E669;
+}
+.greenbtnColor:hover{
+    background: #89F290;
+}
+.bluebtnColor:hover{
+    background: #2894ff;
+}
+.purplebtnColor:hover{
+    background: #C568FA;
+}
+
+.GradualBlue{
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+.GradualPurple{
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+}
+.GradualOrange{
+    background: linear-gradient(90deg,#e85a19,#f5ce62);
+}
