@@ -250,33 +250,116 @@ h1,h3{
     background: #C568FA;
 }
 
-/* form  */
-.loginform{
+/* todo  */
+.todoCard{
+    margin-left: 20px;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px; 
+    flex-wrap: wrap;
+    flex-direction: column; 
+    overflow: hidden;
+}
+.todoCard .head{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    top: -20px;
+    padding: 40px;
+    clip-path: circle(150px at 50% 0);
+    text-align: center;
+    align-items: center;
+}
+.todoCard .CardContent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 40px;
+    text-decoration: none;
+    
+}
+.todoCard .CardContent li{
+    list-style-type:none;
+    border: #C568FA solid 0.5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: default;
+    box-shadow: 0px 2px 1px 0px #C568FA;
+}
+.todoCard .CardContent i{
+    color: #fff;
+    background-color: #C568FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    position: relative;
+    left: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.todoCard .CardContent li:hover i{
+    left: 0px;
+}
+.todoCard .AddTodo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.todoCard .AddTodo input{
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    border: #C568FA solid 2px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+}
+.todoCard .AddTodo i{
+    color: #C568FA;
+    font-size: 30px;
+    cursor: pointer;
+}
+input:focus{outline:none}
+
+
+
+
+
+.BMICard{
     margin-left: 20px;
     width: 300px;
     height: 300px;
     background: #fff;
-    border-radius: 40px;
-    
-    display: flex;
-    align-items: center;
+    border-radius: 20px; 
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column; 
+    overflow: hidden;
+}
+.BMICard .head{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -20px;
     padding: 40px;
-}
-.loginform:hover{
-    box-shadow: 0 15px 25px rgb(194, 194, 196);
-}
-.inputType1{
-  
-
-    border-bottom-width: 1px solid rgb(68, 66, 66);
-    border-top:0px;  
-    border-left:0px;  
-    border-right:0px;
-    width: 200px;
-    height: 30px;
-    margin-top: 20px;
+    clip-path: circle(40% at 50% 0);
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -368,4 +451,7 @@ h1,h3{
 }
 .GradualOrange{
     background: linear-gradient(90deg,#e85a19,#f5ce62);
+}
+.GradualPink{
+    background: linear-gradient(90deg,#9796f0,#fbc7d4);
 }
