@@ -330,6 +330,10 @@ h1,h3{
     border-left: 0;
     border-right: 0;
 }
+.todoCard .AddTodo button{
+    background-color: #fff;
+    border: 0;
+}
 .todoCard .AddTodo i{
     color: #C568FA;
     font-size: 30px;
